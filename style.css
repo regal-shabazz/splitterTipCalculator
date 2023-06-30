@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 3rem auto;
+}
+
+main {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 20px 20px 0 0;
+  min-height: 100vh;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color:hsl(184, 14%, 56%);
+  margin-top: 1rem;
+}
+
+/* .input-field,
+.select-tip-field {
+  margin-bottom: 1.5rem;
+} */
+
+.input-field {
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.input-field span,
+.input-field input {
+  border: 0;
+  background-color: transparent;
+  color: hsl(184, 14%, 56%);
+}
+
+.input-field input {
+  text-align: end;
+  width: 100%;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+}
+
+.input-field input:focus {
+  outline: 0;
+  border: 0;
+}
+
+.select-tip-field {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  justify-content: space-between;
+}
+
+.select-tip-field button {
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 0;
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#custom {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(184, 14%, 56%);
+  text-transform: capitalize;
+  text-align: end;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 1rem;
+}
+
+.display-field {
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.display-field > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.display-field h2 {
+  color: #fff;
+  width: 100px;
+  line-height: 1.3;
+}
+
+.display-field h2 span {
+  color:  hsl(184, 14%, 56%);
+  font-size: .8rem;
+  display: block;
+  text-transform: lowercase;
+}
+
+.display-figure {
+  font-size: 2rem;
+  color: hsl(172, 67%, 45%);
+}
+
+.display-field button {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 10px;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(183, 98%, 20%);
+  border: 0;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: .7rem;
+}

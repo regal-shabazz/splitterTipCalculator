@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- width 100%
+      max-width 600px
+      margin 0 auto
+      height 100vh -->
+    <div class="container">
+      <!-- h1 max-width: ? -->
+      <img src="./images/logo.svg" alt="" class="logo">
+
+      <!-- width 100% -->
+      <main>
+        <div class="input-field-container">
+          <h2>bill</h2>
+          <div class="bill input-field">
+            <span><img src="./images/icon-dollar.svg" alt=""></span><input type="text" id="bill-input-field" placeholder="0"/>
+          </div>
+          <!-- <p class="error-message"></p> -->
+
+          <h2>select tip %</h2>
+          <div class="select-tip-field">
+            <button class="tip-btn" id="five-percent">5%</button>
+            <button class="tip-btn" id="ten-percent">10%</button>
+            <button class="tip-btn" id="fifteen-percent">15%</button>
+            <button class="tip-btn" id="twenty-five-percent">25%</button>
+            <button class="tip-btn" id="fifty-percent">50%</button>
+            <input type="text" id="custom" placeholder="custom tip amount">
+          </div>
+          <h2>number of people</h2>
+          <div class="number-of-people input-field">
+            <span><img src="./images/icon-person.svg" alt=""></span><input type="text" id="number-of-ppl-input-field" placeholder="0"/>
+          </div>
+          <!-- <p class="error-message"></p> -->
+        </div>
+
+
+        <div class="display-field">
+          <!-- display flex -->
+          <div id="tip-amount">
+            <h2>tip amount <span>/ person</span></h2>
+            <span class="display-figure" id="display-tip-amount">$0.00</span>
+          </div>
+
+          <!-- display flex -->
+          <div id="total">
+            <h2>total <span>/ person</span></h2>
+            <span class="display-figure" id="display-total">$0.00</span>
+          </div>
+
+
+          <button id="reset">reset</button>
+        </div>
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
